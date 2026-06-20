@@ -3,11 +3,9 @@ import javascriptLogo from './assets/javascript.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import { setupCounter } from './counter.js'
-import mainLanguage, { person, sayHello } from '../modules.js'
+import DEV_LAN, {person as personObject, sayHello} from "../modules";
 
-console.log(person);
-sayHello();
-console.log(mainLanguage)
+console.log(personObject);
 
 document.querySelector('#app').innerHTML = `
 <section id="center">
